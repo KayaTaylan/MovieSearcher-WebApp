@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Ensure that the container does not show overflow */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.movie-results {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* Updated to display 4 movies per line */
+    gap: 20px;
+    max-height: 60vh; /* Set a maximum height for the movie results */
+    overflow-y: auto; /* Add a scrollbar for overflow */
+}
+
+.movie-card {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 100%; /* Ensure that the movie cards do not exceed their container */
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px;
+}
